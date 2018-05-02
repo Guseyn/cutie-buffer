@@ -2,8 +2,8 @@
 
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
-// Represented result is iterator [index, byte]
-class BufferEntries extends AsyncObject {
+// Represented result is integer
+class BufferLength extends AsyncObject {
 
   constructor(buf) {
     super(buf);
@@ -11,10 +11,10 @@ class BufferEntries extends AsyncObject {
 
   definedSyncCall() {
     return (buf) => {
-      return buf.entries();
+      return buf.length;
     }
   }
 
 }
 
-module.exports = BufferEntries;
+module.exports = BufferLength;
