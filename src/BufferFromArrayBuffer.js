@@ -5,8 +5,8 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 // Represented result is buffer
 class BufferFromArrayBuffer extends AsyncObject {
 
-  constructor(arrayBuffer, byteOffset, length) {
-    super(arrayBuffer, byteOffset || 0, length || arrayBuffer.length - byteOffset);
+  constructor(arrayBuf, byteOffset, length) {
+    super(arrayBuf, byteOffset || 0, length || arrayBuf.length - byteOffset);
   }
 
   definedSyncCall() {
