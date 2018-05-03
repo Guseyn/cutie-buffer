@@ -17,4 +17,4 @@ class ArrayBuffer extends AsyncObject {
 
 }
 
-module.exports = IsBuffer;
+module.exports = ArrayBuffer;
