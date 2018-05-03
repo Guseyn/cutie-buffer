@@ -11,7 +11,8 @@ class WrittenBuffer extends AsyncObject {
 
   definedSyncCall() {
     return (buf, string, offset, length, encoding) => {
-      return buf.write(string, offset, length, encoding);
+      buf.write(string, offset, length, encoding);
+      return buf;
     }
   }
 
