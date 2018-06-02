@@ -3,7 +3,7 @@
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
 // Represented result is ArrayBuffer
-class ArrayBuffer extends AsyncObject {
+class ArrayBufferOfBuffer extends AsyncObject {
 
   constructor(buf) {
     super(buf);
@@ -17,4 +17,4 @@ class ArrayBuffer extends AsyncObject {
 
 }
 
-module.exports = ArrayBuffer;
+module.exports = ArrayBufferOfBuffer;
