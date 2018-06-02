@@ -6,7 +6,7 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 class BufferAsJSON extends AsyncObject {
 
   constructor(buf) {
-    super(buffer);
+    super(buf);
   }
 
   definedSyncCall() {
