@@ -1,21 +1,29 @@
 'use strict'
 
 const {
-  Assertion
+  as
+} = require('@guseyn/cutie');
+const {
+  StrictEqualAssertion
 } = require('@guseyn/cutie-assert');
 const {
   Is
 } = require('@guseyn/cutie-is');
 const {
+  IteratorProtocol
+} = require('@guseyn/cutie-iterator');
+const {
   AllocatedUnsafeBuffer,
   BufferEntries
 } = require('./../index');
 
-// TODO: we need cutie-iterator
-/*new Assertion(
-  new Is(
-    new BufferEntries(
-      new AllocatedUnsafeBuffer(10)
+new BufferEntries(
+  new AllocatedUnsafeBuffer(10)
+).as('iterator').after(
+  new StrictEqualAssertion(
+    as('iterator'),
+    new IteratorProtocol(
+      as('iterator')
     )
   )
-).call();*/
+).call();
