@@ -15,7 +15,7 @@ class CopiedBuffer extends AsyncObject {
 
   definedSyncCall() {
     return (source, target, targetStart, sourceStart, sourceEnd) => {
-      source.copy(target, targetStart, targetEnd, sourceStart, sourceEnd);
+      source.copy(target, targetStart, sourceStart, sourceEnd);
       return target;
     }
   }

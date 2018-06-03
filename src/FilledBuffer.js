@@ -10,7 +10,7 @@ class FilledBuffer extends AsyncObject {
 
   definedSyncCall() {
     return (buf, value, offset, end, encoding) => {
-      return buf.equals(value, offset, end, encoding);
+      return buf.fill(value, offset, end, encoding);
     }
   }
 

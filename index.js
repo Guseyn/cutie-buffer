@@ -5,6 +5,7 @@ module.exports = {
   AllocatedUnsafeSlowBuffer: require('./src/AllocatedUnsafeSlowBuffer'),
   AreBuffersEqual: require('./src/AreBuffersEqual'),
   ArrayBufferOfBuffer: require('./src/ArrayBufferOfBuffer'),
+  ArrayOfBuffers: require('./src/ArrayOfBuffers'),
   BufferAsJSON: require('./src/BufferAsJSON'),
   BufferEntries: require('./src/BufferEntries'),
   BufferFromArray: require('./src/BufferFromArray'),
