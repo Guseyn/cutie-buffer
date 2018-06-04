@@ -5,12 +5,12 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 // Represented result is buffer
 class Swapped64Buffer extends AsyncObject {
 
-  constructor(buffer) {
-    super(buffer);
+  constructor(buf) {
+    super(buf);
   }
 
   definedSyncCall() {
-    return (buffer) => {
+    return (buf) => {
       return buf.swap64();
     }
   }

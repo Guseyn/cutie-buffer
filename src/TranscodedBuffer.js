@@ -1,6 +1,7 @@
 'use strict'
 
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
+const buffer = require('buffer');
 
 // Represented result is buffer
 class TranscodedBuffer extends AsyncObject {
