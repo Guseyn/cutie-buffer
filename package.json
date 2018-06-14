@@ -1,6 +1,6 @@
 {
   "name": "@guseyn/cutie-buffer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Cutie extension for buffer module in Node.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "dependencies": {
     "@guseyn/cutie": "1.4.0",
     "@guseyn/cutie-assert": "1.1.0",
-    "@guseyn/cutie-is": "1.0.2",
+    "@guseyn/cutie-is": "1.0.3",
     "@guseyn/cutie-iterator": "1.0.1",
     "test-executor": "1.0.8"
   },
