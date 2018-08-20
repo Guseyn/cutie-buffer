@@ -15,7 +15,7 @@ const {
   // Needed async objects here from the table below
 } = require('@guseyn/cutie-buffer');
 ```
-For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/).
+For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for buffer module.
 
 | Async Object  | Async/sync call | Parameters | Representation result |
 | ------------- | ----------------| ---------- | --------------------- |
