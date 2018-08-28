@@ -13,7 +13,7 @@ You can find examples of using this library in the [test directory](https://gith
 ```js
 const {
   // Needed async objects here from the table below
-} = require('@guseyn/cutie-buffer');
+} = require('@cuties/buffer');
 ```
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>buffer</b> module.
 
@@ -89,5 +89,5 @@ For more information about parameters in the async objects visit [docs of Node](
 | `WrittenUIntBE` | `buf.writeUIntBE` | `buf, value, offset, noAssert(false)` | `number` |
 | `WrittenUIntLE` | `buf.writeUIntLE` | `buf, value, offset, noAssert(false)` | `number` |
 
-[npm-image]: https://img.shields.io/npm/v/@guseyn/cutie-buffer.svg
-[npm-url]: https://npmjs.org/package/@guseyn/cutie-buffer
+[npm-image]: https://img.shields.io/npm/v/@cuties/buffer.svg
+[npm-url]: https://npmjs.org/package/@cuties/buffer

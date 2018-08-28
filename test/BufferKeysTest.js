@@ -2,16 +2,16 @@
 
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   StrictEqualAssertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   IteratorProtocol
-} = require('@guseyn/cutie-iterator');
+} = require('@cuties/iterator');
 const {
   AllocatedUnsafeBuffer,
   BufferKeys

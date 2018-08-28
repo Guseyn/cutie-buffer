@@ -2,10 +2,10 @@
 
 const {
   Is
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   AllocatedUnsafeBuffer,
   Swapped16Buffer

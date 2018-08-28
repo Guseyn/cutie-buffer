@@ -2,7 +2,7 @@
 
 const {
   StrictEqualAssertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   AllocatedUnsafeBuffer,
   BufferLength
