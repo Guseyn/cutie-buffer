@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is ArrayBuffer
 class ArrayBufferOfBuffer extends AsyncObject {
-
-  constructor(buf) {
-    super(buf);
+  constructor (buf) {
+    super(buf)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (buf) => {
-      return buf.buffer;
+      return buf.buffer
     }
   }
-
 }
 
-module.exports = ArrayBufferOfBuffer;
+module.exports = ArrayBufferOfBuffer

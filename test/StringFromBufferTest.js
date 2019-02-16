@@ -2,14 +2,14 @@
 
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   AllocatedUnsafeBuffer,
   StringFromBuffer
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
@@ -17,4 +17,4 @@ new Assertion(
       new AllocatedUnsafeBuffer(10)
     )
   )
-).call();
+).call()

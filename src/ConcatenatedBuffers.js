@@ -1,18 +1,16 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is buffer
 class ConcatenatedBuffers extends AsyncObject {
-
-  constructor(buffers, totalLength) {
-    super(buffers, totalLength);
+  constructor (buffers, totalLength) {
+    super(buffers, totalLength)
   }
 
-  definedSyncCall() {
-    return Buffer.concat;
+  definedSyncCall () {
+    return Buffer.concat
   }
-
 }
 
-module.exports = ConcatenatedBuffers;
+module.exports = ConcatenatedBuffers

@@ -2,12 +2,12 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   AllocatedUnsafeBuffer,
   IsIncluded,
   FilledBuffer
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsIncluded(
@@ -15,4 +15,4 @@ new Assertion(
       new AllocatedUnsafeBuffer(10), 12
     ), 12
   )
-).call();
+).call()

@@ -2,19 +2,19 @@
 
 const {
   IsNumber
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   AllocatedUnsafeBuffer,
   ReadUIntBE
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsNumber(
     new ReadUIntBE(
-      new AllocatedUnsafeBuffer(10), 1
+      new AllocatedUnsafeBuffer(10), 1, 1
     )
   )
-).call();
+).call()

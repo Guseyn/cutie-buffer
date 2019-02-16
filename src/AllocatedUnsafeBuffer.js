@@ -1,18 +1,16 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is buffer
 class AllocatedUnsafeBuffer extends AsyncObject {
-
-  constructor(size) {
-    super(size);
+  constructor (size) {
+    super(size)
   }
 
-  definedSyncCall() {
-    return Buffer.allocUnsafe;
+  definedSyncCall () {
+    return Buffer.allocUnsafe
   }
-
 }
 
-module.exports = AllocatedUnsafeBuffer;
+module.exports = AllocatedUnsafeBuffer

@@ -2,13 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsEncoding
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsEncoding(
     'utf8'
   )
-).call();
+).call()

@@ -2,20 +2,17 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   StrictEqualAssertion
-} = require('@cuties/assert');
-const {
-  Is
-} = require('@cuties/is');
+} = require('@cuties/assert')
 const {
   IteratorProtocol
-} = require('@cuties/iterator');
+} = require('@cuties/iterator')
 const {
   AllocatedUnsafeBuffer,
   BufferKeys
-} = require('./../index');
+} = require('./../index')
 
 new BufferKeys(
   new AllocatedUnsafeBuffer(10)
@@ -26,4 +23,4 @@ new BufferKeys(
       as('iterator')
     )
   )
-).call();
+).call()

@@ -2,17 +2,17 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   BufferFromObject
-} = require('./../index');
+} = require('./../index')
 
 class Foo {
-  [Symbol.toPrimitive]() {
-    return 'this is a test';
+  [Symbol.toPrimitive] () {
+    return 'this is a test'
   }
 }
 
@@ -22,4 +22,4 @@ new Assertion(
       new Foo(), 'utf8'
     ), Buffer
   )
-).call();
+).call()
