@@ -2,14 +2,14 @@
 
 const {
   StrictEqualAssertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   AllocatedUnsafeBuffer,
   ByteLengthOfBuffer
-} = require('./../index');
+} = require('./../index')
 
 new StrictEqualAssertion(
   new ByteLengthOfBuffer(
     new AllocatedUnsafeBuffer(10)
   ), 10
-).call();
+).call()

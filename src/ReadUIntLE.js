@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is number
 class ReadUIntLE extends AsyncObject {
-
-  constructor(buf, offset, noAssert) {
-    super(buf, offset, noAssert || false);
+  constructor (buf, offset, byteLength) {
+    super(buf, offset, byteLength)
   }
 
-  definedSyncCall() {
-    return (buf, offset, noAssert) => {
-      return buf.readUIntLE(offset, noAssert);
+  definedSyncCall () {
+    return (buf, offset, byteLength) => {
+      return buf.readUIntLE(offset, byteLength)
     }
   }
-
 }
 
-module.exports = ReadUIntLE;
+module.exports = ReadUIntLE

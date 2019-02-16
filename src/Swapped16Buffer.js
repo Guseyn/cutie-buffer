@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is buffer
 class Swapped16Buffer extends AsyncObject {
-
-  constructor(buf) {
-    super(buf);
+  constructor (buf) {
+    super(buf)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (buf) => {
-      return buf.swap16();
+      return buf.swap16()
     }
   }
-
 }
 
-module.exports = Swapped16Buffer;
+module.exports = Swapped16Buffer

@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is iterator [index]
 class BufferKeys extends AsyncObject {
-
-  constructor(buf) {
-    super(buf);
+  constructor (buf) {
+    super(buf)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (buf) => {
-      return buf.keys();
+      return buf.keys()
     }
   }
-
 }
 
-module.exports = BufferKeys;
+module.exports = BufferKeys

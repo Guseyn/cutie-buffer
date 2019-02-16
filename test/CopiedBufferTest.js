@@ -2,15 +2,15 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   AllocatedUnsafeBuffer,
   CopiedBuffer,
   AreBuffersEqual
-} = require('./../index');
+} = require('./../index')
 
 new AllocatedUnsafeBuffer(10)
   .as('buf')
@@ -18,8 +18,8 @@ new AllocatedUnsafeBuffer(10)
     new Assertion(
       new AreBuffersEqual(
         as('buf'),
-        new CopiedBuffer(as('buf'), 
-        new AllocatedUnsafeBuffer(10))
+        new CopiedBuffer(as('buf'),
+          new AllocatedUnsafeBuffer(10))
       )
     )
-  ).call();
+  ).call()

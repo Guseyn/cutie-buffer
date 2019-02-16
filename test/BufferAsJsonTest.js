@@ -2,19 +2,19 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
-  Is
-} = require('@cuties/is');
+  IsObject
+} = require('@cuties/is')
 const {
   AllocatedUnsafeBuffer,
   BufferAsJSON
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
-  new Is(
+  new IsObject(
     new BufferAsJSON(
       new AllocatedUnsafeBuffer(10)
-    ), JSON
+    )
   )
-)
+).call()

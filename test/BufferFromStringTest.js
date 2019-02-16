@@ -2,13 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   BufferFromString
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new Is(
@@ -16,4 +16,4 @@ new Assertion(
       'string'
     ), Buffer
   )
-).call();
+).call()

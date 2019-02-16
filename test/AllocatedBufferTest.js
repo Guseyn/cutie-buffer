@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   AllocatedBuffer
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new Is(
     new AllocatedBuffer(10), Buffer
   )
-).call();
+).call()

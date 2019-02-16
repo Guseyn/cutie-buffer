@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is integer
 class BufferLength extends AsyncObject {
-
-  constructor(buf) {
-    super(buf);
+  constructor (buf) {
+    super(buf)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (buf) => {
-      return buf.length;
+      return buf.length
     }
   }
-
 }
 
-module.exports = BufferLength;
+module.exports = BufferLength
