@@ -8,7 +8,7 @@ class SlicedBuffer extends AsyncObject {
     super(buf, start || 0, end || buf.length)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, start, end) => {
       return buf.slice(start, end)
     }

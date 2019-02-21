@@ -8,7 +8,7 @@ class ReadFloatLE extends AsyncObject {
     super(buffer, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buffer, offset, noAssert) => {
       return buffer.readFloatLE(offset, noAssert)
     }

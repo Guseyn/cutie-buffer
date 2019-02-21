@@ -8,7 +8,7 @@ class ReadUInt8 extends AsyncObject {
     super(buf, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, offset, noAssert) => {
       return buf.readUInt8(offset, noAssert)
     }

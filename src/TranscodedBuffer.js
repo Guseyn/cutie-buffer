@@ -9,7 +9,7 @@ class TranscodedBuffer extends AsyncObject {
     super(source, fromEnc, toEnc)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (source, fromEnc, toEnc) => {
       return buffer.transcode(source, fromEnc, toEnc)
     }

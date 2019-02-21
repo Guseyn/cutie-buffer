@@ -8,7 +8,7 @@ class AllocatedBuffer extends AsyncObject {
     super(size, fill || 0, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.alloc
   }
 }

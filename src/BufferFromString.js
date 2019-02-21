@@ -8,7 +8,7 @@ class BufferFromString extends AsyncObject {
     super(string, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.from
   }
 }
