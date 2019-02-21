@@ -8,7 +8,7 @@ class ReadInt32LE extends AsyncObject {
     super(buf, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, offset, noAssert) => {
       return buf.readInt32LE(offset, noAssert)
     }

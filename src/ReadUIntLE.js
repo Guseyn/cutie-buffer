@@ -8,7 +8,7 @@ class ReadUIntLE extends AsyncObject {
     super(buf, offset, byteLength)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, offset, byteLength) => {
       return buf.readUIntLE(offset, byteLength)
     }

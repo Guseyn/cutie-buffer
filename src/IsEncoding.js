@@ -8,7 +8,7 @@ class IsEncoding extends AsyncObject {
     super(encoding)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.isEncoding
   }
 }

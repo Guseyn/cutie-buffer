@@ -8,7 +8,7 @@ class ReadIntLE extends AsyncObject {
     super(buf, byteLength, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, byteLength, offset, noAssert) => {
       return buf.readIntLE(offset, byteLength, noAssert)
     }

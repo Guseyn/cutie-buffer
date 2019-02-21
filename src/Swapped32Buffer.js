@@ -8,7 +8,7 @@ class Swapped32Buffer extends AsyncObject {
     super(buf)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf) => {
       return buf.swap32()
     }

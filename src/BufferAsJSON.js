@@ -8,7 +8,7 @@ class BufferAsJSON extends AsyncObject {
     super(buf)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf) => {
       return buf.toJSON()
     }

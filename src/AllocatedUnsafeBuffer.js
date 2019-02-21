@@ -8,7 +8,7 @@ class AllocatedUnsafeBuffer extends AsyncObject {
     super(size)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.allocUnsafe
   }
 }

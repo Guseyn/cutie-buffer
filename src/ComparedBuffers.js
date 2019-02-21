@@ -12,7 +12,7 @@ class ComparedBuffers extends AsyncObject {
     )
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (source, target, targetStart, targetEnd, sourceStart, sourceEnd) => {
       return source.compare(target, targetStart, targetEnd, sourceStart, sourceEnd)
     }

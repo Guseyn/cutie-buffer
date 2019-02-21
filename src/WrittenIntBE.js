@@ -8,7 +8,7 @@ class WrittenIntBE extends AsyncObject {
     super(buf, value, offset, byteLength)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, offset, byteLength) => {
       return buf.writeIntBE(value, offset, byteLength)
     }

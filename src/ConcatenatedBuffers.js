@@ -8,7 +8,7 @@ class ConcatenatedBuffers extends AsyncObject {
     super(buffers, totalLength)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.concat
   }
 }

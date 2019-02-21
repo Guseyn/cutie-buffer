@@ -7,7 +7,7 @@ class FilledBuffer extends AsyncObject {
     super(buf, value, offset || 0, end || buf.length, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, offset, end, encoding) => {
       return buf.fill(value, offset, end, encoding)
     }

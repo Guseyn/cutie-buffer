@@ -8,7 +8,7 @@ class WrittenIntLE extends AsyncObject {
     super(buf, value, offset, byteLength)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, offset, byteLength) => {
       return buf.writeIntLE(value, offset, byteLength)
     }

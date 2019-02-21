@@ -8,7 +8,7 @@ class IsBuffer extends AsyncObject {
     super(obj)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.isBuffer
   }
 }
