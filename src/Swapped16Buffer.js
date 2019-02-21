@@ -8,7 +8,7 @@ class Swapped16Buffer extends AsyncObject {
     super(buf)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf) => {
       return buf.swap16()
     }

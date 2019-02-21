@@ -8,7 +8,7 @@ class LastIndexOf extends AsyncObject {
     super(buf, value, byteOffset || buf.length - 1, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, byteOffset, encoding) => {
       return buf.lastIndexOf(value, byteOffset, encoding)
     }

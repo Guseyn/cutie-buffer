@@ -8,7 +8,7 @@ class IsIncluded extends AsyncObject {
     super(buf, value, byteOffset || 0, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, byteOffset, encoding) => {
       return buf.includes(value, byteOffset, encoding)
     }

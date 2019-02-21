@@ -8,7 +8,7 @@ class ReadInt16LE extends AsyncObject {
     super(buf, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, offset, noAssert) => {
       return buf.readInt16LE(offset, noAssert)
     }

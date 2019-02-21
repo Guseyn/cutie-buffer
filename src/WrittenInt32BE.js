@@ -8,7 +8,7 @@ class WrittenInt32BE extends AsyncObject {
     super(buf, value, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, offset, noAssert) => {
       return buf.writeInt32BE(value, offset, noAssert)
     }

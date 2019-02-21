@@ -8,7 +8,7 @@ class WrittenBuffer extends AsyncObject {
     super(buf, string, offset || 0, length || buf.length - offset, encoding || 'utf8')
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, string, offset, length, encoding) => {
       buf.write(string, offset, length, encoding)
       return buf

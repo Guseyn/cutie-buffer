@@ -8,7 +8,7 @@ class BufferFromObject extends AsyncObject {
     super(object, offsetOrEncoding, length)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.from
   }
 }

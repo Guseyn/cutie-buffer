@@ -7,7 +7,7 @@ class AreBuffersEqual extends AsyncObject {
     super(buf1, buf2)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf1, buf2) => {
       return buf1.equals(buf2)
     }

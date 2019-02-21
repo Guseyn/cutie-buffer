@@ -8,7 +8,7 @@ class BufferFromArrayBuffer extends AsyncObject {
     super(arrayBuf, byteOffset || 0, length || arrayBuf.length - byteOffset)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return Buffer.from
   }
 }

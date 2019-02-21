@@ -8,7 +8,7 @@ class ArrayOfBuffers extends AsyncObject {
     super(...buffers)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (...buffers) => {
       return buffers
     }

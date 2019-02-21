@@ -8,7 +8,7 @@ class Swapped64Buffer extends AsyncObject {
     super(buf)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf) => {
       return buf.swap64()
     }

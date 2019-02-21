@@ -8,7 +8,7 @@ class WrittenInt8 extends AsyncObject {
     super(buf, value, offset, noAssert || false)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (buf, value, offset, noAssert) => {
       return buf.writeInt8(value, offset, noAssert)
     }
