@@ -1,6 +1,6 @@
 {
   "name": "@cuties/buffer",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Cutie extension for buffer module in Node.",
   "main": "index.js",
   "scripts": {
